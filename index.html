@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Systems Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Shoelace modern button library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <!-- Framer Motion for web animations -->
+    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Information Systems Department</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text card motion-fade-in">
+                    <h2>Welcome to the Information Systems Department</h2>
+                    <p>Part of the Faculty of Computing at the University of Uyo. We empower students with knowledge in information technology, systems analysis, and digital innovation.</p>
+                    <p class="lead">Practical curriculum, industry-aligned projects, and research opportunities.</p>
+                    <sl-button variant="primary" pill href="courses.html">Explore Courses</sl-button>
+                </div>
+                <div class="hero-image-wrap motion-fade-in">
+                    <img src="images/University_of_Uyo.jpg" alt="University of Uyo" class="hero-image card">
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="container about-preview card motion-fade-in">
+                <div class="about-text">
+                    <h3>About Our Department</h3>
+                    <p>The Information Systems Department is part of the Faculty of Computing at the University of Uyo, located in Uyo, Akwa Ibom State, Nigeria. We are dedicated to providing comprehensive education in the design, implementation, and management of information systems. Our programs prepare students for careers in technology, business analysis, and system development.</p>
+                    <sl-button variant="success" pill href="about.html">Learn More About Us</sl-button>
+                </div>
+                <div class="about-image-wrap">
+                    <img src="images/University_of_Uyo.jpg" alt="Faculty of Computing - University of Uyo" class="about-image card">
+                </div>
+            </div>
+
+            <div class="container featured-courses">
+                <h3>Featured Courses (Sample)</h3>
+                <div class="courses-grid">
+                    <div class="course-card card motion-fade-in">
+                        <h4>INS 101</h4>
+                        <p>Introduction to Information Systems — basic concepts and role of IS in organizations.</p>
+                    </div>
+                    <div class="course-card card motion-fade-in">
+                        <h4>INS 203</h4>
+                        <p>Database Management Systems — design, SQL, and practical database tasks.</p>
+                    </div>
+                    <div class="course-card card motion-fade-in">
+                        <h4>INS 305</h4>
+                        <p>Mobile Application Development — building apps and mobile UX fundamentals.</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <sl-button variant="primary" pill href="courses.html">View All Courses</sl-button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Information Systems Department, Faculty of Computing, University of Uyo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

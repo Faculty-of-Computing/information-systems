@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Information Systems Department</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Shoelace modern button library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <!-- Framer Motion for web animations -->
+    <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Information Systems Department</h1>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <div class="contact-info motion-fade-in">
+                    <div class="contact-section card">
+                        <h3>Department Information</h3>
+                        <p><strong>Department:</strong> Information Systems</p>
+                        <p><strong>Faculty:</strong> Faculty of Computing</p>
+                        <p><strong>University:</strong> University of Uyo</p>
+                        <p><strong>Location:</strong> Uyo, Akwa Ibom State, Nigeria</p>
+                    </div>
+                    <div class="contact-section card">
+                        <h3>Contact Details</h3>
+                        <p><strong>Phone:</strong> +234 (0) 801 234 5678</p>
+                        <p><strong>Email:</strong> info@uniuyo.edu.ng</p>
+                        <p><strong>Department Email:</strong> infosys@uniuyo.edu.ng</p>
+                        <p><strong>Website:</strong> <a href="http://www.uniuyo.edu.ng" target="_blank">www.uniuyo.edu.ng</a></p>
+                    </div>
+                    <div class="contact-section card">
+                        <h3>Office Hours</h3>
+                        <p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</p>
+                        <p><strong>Saturday:</strong> 9:00 AM - 2:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                    </div>
+                    <div class="contact-section card">
+                        <h3>Visit Us</h3>
+                        <p><strong>Address:</strong></p>
+                        <p>Information Systems Department<br>
+                        Faculty of Computing<br>
+                        University of Uyo<br>
+                        P.M.B. 1017<br>
+                        Uyo, Akwa Ibom State<br>
+                        Nigeria</p>
+                    </div>
+                </div>
+                <div class="contact-form card motion-fade-in">
+                    <h3>Send us a Message</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject:</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <sl-button variant="primary" pill type="submit">Send Message</sl-button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Information Systems Department, Faculty of Computing, University of Uyo. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
