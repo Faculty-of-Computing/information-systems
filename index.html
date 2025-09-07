@@ -13,17 +13,22 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
-                <h1>Information Systems</h1>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            <nav>
+                <div class="container nav-flex">
+                    <h1>Information Systems</h1>
+                    <button class="nav-toggle" aria-label="Open menu">
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                        <span class="nav-toggle-bar"></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
 
     <main>
@@ -42,37 +47,45 @@
         </section>
 
         <section class="content">
-            <div class="container about-preview card motion-fade-in">
-                <div class="about-text">
-                    <h3>About Our Department</h3>
-                    <p>The Information Systems Department is part of the Faculty of Computing at the University of Uyo, located in Uyo, Akwa Ibom State, Nigeria. We are dedicated to providing comprehensive education in the design, implementation, and management of information systems. Our programs prepare students for careers in technology, business analysis, and system development.</p>
-                    <sl-button variant="success" pill href="about.html">Learn More About Us</sl-button>
+                <div class="container about-preview about-card-wrap motion-fade-in">
+                        <div class="about-card card">
+                            <h3>About Our Department</h3>
+                            <p>The Information Systems Department is part of the Faculty of Computing at the University of Uyo, located in Uyo, Akwa Ibom State, Nigeria. We are dedicated to providing comprehensive education in the design, implementation, and management of information systems. Our programs prepare students for careers in technology, business analysis, and system development.</p>
+                            <sl-button variant="success" pill href="about.html">Learn More About Us</sl-button>
+                        </div>
+                        <div class="about-image-wrap about-image-card card">
+                            <img src="images/University_of_Uyo.jpg" alt="Faculty of Computing - University of Uyo" class="about-image">
+                        </div>
                 </div>
-                <div class="about-image-wrap">
-                    <img src="images/University_of_Uyo.jpg" alt="Faculty of Computing - University of Uyo" class="about-image card">
-                </div>
-            </div>
 
-            <div class="container featured-courses">
-                <h3>Featured Courses</h3>
-                <div class="courses-grid">
-                    <div class="course-card card motion-fade-in">
-                        <h4>INS 111</h4>
-                        <p>Introduction to Information Systems — basic concepts and role of IS in organizations.</p>
+                <div class="container featured-courses center">
+                    <h3>Featured Courses</h3>
+                    <div class="courses-grid courses-grid-2x2">
+                        <div class="course-card card motion-fade-in">
+                            <h4>UUY-INS 111</h4>
+                            <p><strong>Information Systems Hardware And Software I</strong><br>
+                            Introduction to the fundamental components of computer hardware and software, including system architecture, operating systems, and basic troubleshooting.</p>
+                        </div>
+                        <div class="course-card card motion-fade-in">
+                            <h4>UUY-INS 112</h4>
+                            <p><strong>Introduction to Multimedia Technology</strong><br>
+                            Covers multimedia concepts, digital media formats, image, audio, and video editing, and the use of multimedia in information systems.</p>
+                        </div>
+                        <div class="course-card card motion-fade-in">
+                            <h4>UUY-INS 121</h4>
+                            <p><strong>Information Systems And Society</strong><br>
+                            Explores the impact of information systems on society, including ethical, legal, and social issues, and the role of IS in modern organizations.</p>
+                        </div>
+                        <div class="course-card card motion-fade-in">
+                            <h4>UUY-INS 122</h4>
+                            <p><strong>Introduction to Web Authoring</strong><br>
+                            Teaches the basics of creating web pages, including HTML, CSS, and introductory web design principles for effective online communication.</p>
+                        </div>
                     </div>
-                    <div class="course-card card motion-fade-in">
-                        <h4>INS 112</h4>
-                        <p>Database Management Systems — design, SQL, and practical database tasks.</p>
-                    </div>
-                    <div class="course-card card motion-fade-in">
-                        <h4>COS 111</h4>
-                        <p>Mobile Application Development — building apps and mobile UX fundamentals.</p>
+                    <div class="center">
+                        <sl-button variant="primary" pill href="courses.html">View All Courses</sl-button>
                     </div>
                 </div>
-                <div class="center">
-                    <sl-button variant="primary" pill href="courses.html">View All Courses</sl-button>
-                </div>
-            </div>
         </section>
     </main>
 
