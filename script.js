@@ -40,6 +40,23 @@ function highlightCurrentPage() {
 // Run on page load
 highlightCurrentPage();
 
+// Mobile nav menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('open');
+        });
+    }
+    // Close menu on link click (mobile)
+    navMenu && navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('open');
+        });
+    });
+});
+
 // Simple animation for level sections on scroll (if needed)
 function animateOnScroll() {
     const levelSections = document.querySelectorAll('.level-section');
