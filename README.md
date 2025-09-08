@@ -1,5 +1,26 @@
 # Information Systems Department Website
 
+Welcome to the Information Systems Department website project! This repository contains a modern, responsive departmental website for the Faculty of Computing, University of Uyo.
+
+## Documentation
+
+Comprehensive documentation is available in the [`docs/`](docs/) folder:
+
+- [Project Overview](docs/overview.md)
+- [Setup & Usage](docs/setup.md)
+- [Features](docs/features.md)
+- [Course Structure](docs/courses.md)
+- [Contributing](docs/contributing.md)
+- [Contact](docs/contact.md)
+
+## Quick Start
+
+1. Clone or download the repository.
+2. Open `index.html` in your browser.
+3. See [`docs/setup.md`](docs/setup.md) for details.
+
+---
+For more information, see the documentation files above or contact the department via the details on the Contact page.
 This project is a modern, responsive departmental website for the Information Systems Department, Faculty of Computing, University of Uyo. It is built using only HTML, CSS, and JavaScript, with modern UI libraries for enhanced user experience.
 
 ## Features
