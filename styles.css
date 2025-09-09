@@ -1,3 +1,83 @@
+/* Add viewport meta tag to HTML head if not present */
+@viewport {
+  width: device-width;
+  initial-scale: 1.0;
+}
+
+/* Base responsive styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  /* Make text more readable on mobile */
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  /* Stack elements vertically on mobile */
+  .row {
+    flex-direction: column;
+  }
+
+  /* Full width columns on mobile */
+  [class*="col-"] {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust navigation for mobile */
+  nav {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Ensure proper rendering on smaller devices */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+}
+
 .about-image-card {
     display: flex;
     align-items: center;
